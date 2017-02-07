@@ -1,0 +1,9 @@
+body {
+    font-family: Verdana, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3 {
+    font-family: Times, serif;
+    line-height: 1.5em;
+    border-bottom: 1px solid #ccc;
+}
