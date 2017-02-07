@@ -17,4 +17,4 @@ $ python train.py
 ```
 
 ## NN Archtecture
-![](_fig/model_cnn.png)
+![](fig/model_cnn.png)
