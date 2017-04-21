@@ -7,7 +7,7 @@ from keras.optimizers import SGD
 from keras.utils import np_utils
 
 BATCH_SIZE = 128
-NUM_EPOCHS = 20
+NUM_EPOCHS = 7
 
 ###################################
 # load and reshape mnist dataset
@@ -71,8 +71,8 @@ model.save_weights('models/weight.h5')
 ###################################
 # visualize model
 ###################################
-from keras.utils.visualize_util import plot
-plot(model, to_file="fig/model_cnn.png", show_shapes=True, show_layer_names=True)
+from keras.utils import plot_model
+plot_model(model, to_file="fig/model_cnn.png", show_shapes=True, show_layer_names=True)
 
 ###################################
 # visualize log
