@@ -1,8 +1,8 @@
-var offcolor = "#bbdefb"
-var oncolor = "#1565c0"
-var size = 3
-var main_size = 16
-var pixels = 784
+var offcolor = "#bbdefb";
+var oncolor = "#1565c0";
+var size = 3;
+var main_size = 16;
+var pixels = 784;
 var grid = Array.apply(null, Array(784)).map(function(_, i) {
     return i;
 });
