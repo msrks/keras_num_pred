@@ -2,28 +2,23 @@
 <html lang="ja">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>Number Prediction</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="{{url_for('static', filename='d3.min.js')}}"></script>
-
-    <link href="{{url_for('static', filename='style.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/style.css')}}" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
         <!-- header -->
         <h1><a href="/">Number Prediction</a></h1>
-
         <!-- content -->
         <div class="row" style="padding:0 0 0 0">
             <div class="col-md-7">
-              <p> 4-Layer CNN(trained with <a href="http://yann.lecun.com/exdb/mnist/">MNIST</a> DATA) Classify Digit Number(0-9)</p>
-                <p> Draw a Nunmber Here !</p>
-                <button type="button" onClick ="newNumber()" class="btn btn-default">new number</button>
+                <p> 4-Layer CNN (trained with <a href="http://yann.lecun.com/exdb/mnist/">MNIST</a>) Classify Digit Number(0-9)</p>
+                <p>Draw a Number Here !</p>
+                <button type="button" class="btn btn-default">new number</button>
                 <p></p>
                 <div id="prediction" align="center"></div>
                 <div id="grid" align="center"></div>
@@ -49,7 +44,7 @@
                 </div>
                 <div class="col-sm-6">
                     <p>Graph: </p>
-                    <div id="bar"></div>
+                    <div id="graph"></div>
                 </div>
             </div>
         </div>
@@ -57,8 +52,10 @@
         <!-- footer -->
         <p>&copy; Masahiro Rikiso</p>
     </div>
-
-    <script src="{{url_for('static', filename='main.js')}}"></script>
+    <script src="{{url_for('static', filename='js/jquery-3.2.1.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/d3.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/main.js')}}"></script>
 </body>
 
 </html>

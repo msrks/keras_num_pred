@@ -3,7 +3,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 h1, h2, h3 {
-    font-family: Times, serif;
+    font-family: Verdana, Arial,Times, serif;
     line-height: 1.5em;
     border-bottom: 1px solid #ccc;
 }
